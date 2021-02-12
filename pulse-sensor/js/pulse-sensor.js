@@ -11,5 +11,5 @@ const pulseSensor = mcpadc.openMcp3008(5, {speedHz: 1350000, busNumber: 0, devic
       console.log(reading)
       console.log(reading.value);
     });
-  }, 1000);
+  }, 500);
 });

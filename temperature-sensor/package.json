@@ -2,14 +2,10 @@
   "name": "temperature-sensor",
   "version": "1.0.0",
   "description": "",
-  "main": "temperature-sensor.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chart.js": "^2.9.4",
-    "mcp-spi-adc": "^3.1.0"
-  }
+  "license": "ISC"
 }

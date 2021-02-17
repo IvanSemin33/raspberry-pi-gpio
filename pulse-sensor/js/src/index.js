@@ -1,4 +1,4 @@
-const mcpadc = require("mcp-spi-adc");
+import mcpadc from "mcp-spi-adc";
 
 const currentTime = 0;
 
@@ -6,11 +6,11 @@ const timeline = [];
 
 const data = [];
 
-const tempSensor = mcpadc.openMcp3008(1, { speedHz: 20000 }, (err) => {
+const pulseSensor = openMcp3008(5, {speedHz: 1350000, busNumber: 0, deviceNumber: 0}, (err) => {
   if (err) throw err;
 
   setInterval((_) => {
-    tempSensor.read((err, reading) => {
+    pulseSensor.read((err, reading) => {
       if (err) {
         throw err;
       }
